@@ -39,7 +39,7 @@ elif [ "$mode" == "checkdisk" ]; then
 elif [ "$mode" == "photorec" ]; then
     run="/bin/fog.photorec";
     after=$afterActionTerm;
-elif [ "$mode" == "badblocks" ]; then
+elif [ "$mode" == "smarttest" ]; then
     run="/bin/fog.surfacetest";
     after=$afterActionTerm;
 elif [ "$mode" == "clamav" ]; then
