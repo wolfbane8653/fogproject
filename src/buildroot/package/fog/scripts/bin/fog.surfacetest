@@ -24,7 +24,7 @@ if [ -n "$hd" ]; then
     echo " Starting Disk Surface Test on "
     echo -e "      ${hd}\n"
     usleep 2000000
-    badblocks -sv ${hd}
+    smartctl -H ${hd}
     echo
     queueinfo=""
     cd /tmp
